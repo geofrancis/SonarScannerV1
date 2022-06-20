@@ -17,7 +17,9 @@ const unsigned long cyclesPerMicroSecond = cyclesPerSecond / 1000000;
 const unsigned long cyclesPerPhase = cyclesPerSecond / 40000;
 const unsigned long cyclesPerPhaseHalf = cyclesPerPhase / 2;
 
-const float meterPerSecond = 344.f;
+//const float meterPerSecond = 344.f;  //speed of sound in air
+const float meterPerSecond = 1480.f;  //speed of sound in water
+
 const float arrayWidthMm = 10 * 8;
 const float mmPerUs = meterPerSecond * 0.001f;
 const long arrayWidthUs = long(arrayWidthMm / mmPerUs);
